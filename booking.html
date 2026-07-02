@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safa Taste Restaurant | Booking</title>
+
+  
+    <meta name="description" content="Book a table at Safa Taste Restaurant using our online reservation form.">
+    <meta name="author" content="Abdifatah Ali Mohamed">
+
+   
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Safa Taste</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help / FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+
+      
+        <section class="page-hero">
+            <h1>Book a Table</h1>
+            <p>Reserve your table online before you visit us.</p>
+        </section>
+
+      
+        <section>
+            <div class="section-title">
+                <h2>Reservation Form</h2>
+                <p>Please complete the form below to book your table.</p>
+            </div>
+
+            <form class="form-container" action="#" method="post">
+
+               
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="full-name" 
+                                name="full-name" 
+                                placeholder="Enter your full name" 
+                                required 
+                                minlength="3">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="example@email.com" 
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="text" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="Enter your phone number" 
+                                required 
+                                pattern="[0-9]{7,15}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Booking Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Create a password" 
+                                required 
+                                minlength="6">
+                        </div>
+                    </div>
+                </fieldset>
+
+             
+                <fieldset>
+                    <legend>Booking Details</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Booking Date</label>
+                            <input 
+                                type="date" 
+                                id="date" 
+                                name="date" 
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Booking Time</label>
+                            <input 
+                                type="time" 
+                                id="time" 
+                                name="time" 
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Choose number of guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6-plus">6 or more people</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+               
+                <fieldset>
+                    <legend>Dining Option</legend>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="dining-option" value="dine-in" required>
+                            Dine In
+                        </label>
+
+                        <label>
+                            <input type="radio" name="dining-option" value="takeaway">
+                            Takeaway
+                        </label>
+
+                        <label>
+                            <input type="radio" name="dining-option" value="family-room">
+                            Family Room
+                        </label>
+                    </div>
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend>Extra Services</legend>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="services" value="birthday">
+                            Birthday Setup
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="high-chair">
+                            Baby High Chair
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="quiet-table">
+                            Quiet Table
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Special Request</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Write any special request here..."></textarea>
+                </div>
+
+               
+                <button type="submit" class="btn primary-btn">Submit Booking</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Safa Taste Restaurant. All rights reserved.</p>
+            <p>Address: Mogadishu City Centre, Somalia</p>
+            <p>
+          
+        </div>
+    </footer>
+
+</body>
+</html>
